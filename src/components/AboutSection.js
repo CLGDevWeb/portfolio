@@ -21,7 +21,7 @@ const AboutSection = () => {
                         <motion.h2 variants={titleAnim}>come true.</motion.h2>
                     </Hide>
                 </motion.div>
-                <motion.p variants={fade}>Contact us for any photography or videographye ideas that you have. We are professionnals with amazing skills.</motion.p>
+                <motion.p variants={fade}>Contact us for any photography or videography ideas that you have. We are professionnals with amazing skills.</motion.p>
                 <motion.button variants={fade}>Contact Us</motion.button>
             </Description>
             <Image>
