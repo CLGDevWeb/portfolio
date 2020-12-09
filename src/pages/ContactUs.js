@@ -9,26 +9,26 @@ const contactUs = () => {
         <ContactStyle exit="exit" variants={pageAnimation} initial="hidden" animate="show" style={{ background: "#fff" }}>
             <Title>
                 <Hide>
-                    <motion.h2 variants={titleAnim} >Get in touch.</motion.h2>
+                    <motion.h2 variants={titleAnim} >Get in <span>touch</span>.</motion.h2>
                 </Hide>
             </Title>
             <div>
                 <Hide>
                     <Social variants={titleAnim} >
                         <Circle />
-                        <h2>Send Us A Message</h2>
+                        <p>Send Us A Message</p>
                     </Social>
                 </Hide>
                 <Hide>
                     <Social variants={titleAnim} >
                         <Circle />
-                        <h2>Send A Email</h2>
+                        <p>Send A Email</p>
                     </Social>
                 </Hide>
                 <Hide>
                     <Social variants={titleAnim} >
                         <Circle />
-                        <h2>Social Media</h2>
+                        <p>Social Media</p>
                     </Social>
                 </Hide>
             </div>
@@ -49,8 +49,17 @@ const ContactStyle = styled(motion.div)`
 const Title = styled.div`
     margin-bottom: 4rem;
     color: black;
+    span {
+        color: #23d997;
+    }
     @media (max-width: 1300px) {
         margin-top: 5rem;
+    }
+    @media (max-width: 768px) {
+        text-align: center;
+        h2 {
+            font-size: 3rem;
+        }
     }
 `;
 
@@ -62,14 +71,27 @@ const Circle = styled.div`
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
-    background: #353535;
+    background: #23d997;
+    @media (max-width: 768px) {
+        width: 2rem;
+        height: 2rem;
+    }
 `;
 
 const Social = styled(motion.div)`
     display: flex;
     align-items: center;
-    h2 {
+    p {
+        color: #353535;
+        font-size: 3rem;
         margin: 2rem;
+    }
+    @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        p {
+            font-size: 2.2rem;
+        }
     }
 `;
 

@@ -4,8 +4,8 @@ import theracer from '../img/theracer-small.png';
 import goodtimes from '../img/goodtimes-small.png';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import {motion} from 'framer-motion';
-import {pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer} from '../animation';
+import { motion } from 'framer-motion';
+import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer } from '../animation';
 import { useScroll } from '../components/useScroll';
 import ScrollTop from '../components/ScrollTop';
 
