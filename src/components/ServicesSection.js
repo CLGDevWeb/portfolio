@@ -6,8 +6,8 @@ import teamwork from '../img/teamwork.svg';
 import home2 from '../img/home2.png';
 import {About, Description, Image} from "../styles";
 import styled from 'styled-components';
-import {useScroll} from './useScroll';
-import {scrollReveal} from '../animation';
+import { useScroll } from './useScroll';
+import { scrollReveal } from '../animation';
 
 const ServicesSection = () => {
     const [element, controls] = useScroll();

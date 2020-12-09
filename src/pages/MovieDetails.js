@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import {useHistory} from 'react-router-dom';
-import {MovieState} from '../movieState';
-import {motion} from 'framer-motion';
-import {pageAnimation} from '../animation';
+import { useHistory } from 'react-router-dom';
+import { MovieState } from '../movieState';
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../animation';
 
 const MovieDetails = () => {
     const history = useHistory();

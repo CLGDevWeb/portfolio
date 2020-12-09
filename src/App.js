@@ -7,7 +7,7 @@ import Nav from './components/Nav';
 // Router
 import { Switch, Route, useLocation } from 'react-router-dom';
 // Animation
-import {AnimatePresence} from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
 
 function App() {
